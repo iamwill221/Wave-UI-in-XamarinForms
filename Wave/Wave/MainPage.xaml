@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="Wave.MainPage">
+
+    <StackLayout>
+        <Image Source="wavelogo" WidthRequest="40" Margin="50"/>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Entry x:Name="codeTxt" IsPassword="True" HorizontalTextAlignment="Center" TextColor="DeepSkyBlue" MaxLength="4" FontSize="50" CharacterSpacing="7" IsReadOnly="True" ></Entry>
+            <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Vode code secret est requis pour déverouiller"/>
+            
+        </StackLayout>
+
+        <Grid VerticalOptions="EndAndExpand" ColumnDefinitions="*,*,*" RowDefinitions="*,*,*,*">
+            <Button Clicked="ButtonClick" BackgroundColor="Transparent" FontSize="30" Grid.Row="0" Grid.Column="0" Text="1"/>
+            <Button Clicked="ButtonClick" BackgroundColor="Transparent" FontSize="30" Grid.Row="0" Grid.Column="1" Text="2"/>
+            <Button Clicked="ButtonClick" BackgroundColor="Transparent" FontSize="30" Grid.Row="0" Grid.Column="2" Text="3"/>
+            <Button Clicked="ButtonClick" BackgroundColor="Transparent" FontSize="30" Grid.Row="1" Grid.Column="0" Text="4"/>
+            <Button Clicked="ButtonClick" BackgroundColor="Transparent" FontSize="30" Grid.Row="1" Grid.Column="1" Text="5"/>
+            <Button Clicked="ButtonClick" BackgroundColor="Transparent" FontSize="30" Grid.Row="1" Grid.Column="2" Text="6"/>
+            <Button Clicked="ButtonClick" BackgroundColor="Transparent" FontSize="30" Grid.Row="2" Grid.Column="0" Text="7"/>
+            <Button Clicked="ButtonClick" BackgroundColor="Transparent" FontSize="30" Grid.Row="2" Grid.Column="1" Text="8"/>
+            <Button Clicked="ButtonClick" BackgroundColor="Transparent" FontSize="30" Grid.Row="2" Grid.Column="2" Text="9"/>
+            <Button Clicked="mdp_oublie" BackgroundColor="Transparent" FontSize="15" Grid.Row="3" Grid.Column="0" Text="OUBLIE?"/>
+            <Button Clicked="ButtonClick" BackgroundColor="Transparent" FontSize="30" Grid.Row="3" Grid.Column="1" Text="0"/>
+            <Button Clicked="Effacer" ImageSource="backspace" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
